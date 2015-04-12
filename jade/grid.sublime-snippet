@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+.Grid.Grid--guttersXl
+  .Grid-cell(ng-repeat="item in asset.assets" ng-class="item.kind")
+    .media(imago-image="item")
+    h3(ng-bind="item | meta:'title'")
+]]></content>
+  <tabTrigger>grid</tabTrigger>
+  <scope>source.jade</scope>
+</snippet>

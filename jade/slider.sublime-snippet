@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+.slider(imago-slider
+  animation="${2:fade|fade}"
+  loop="true"
+  next="{{home.data.next.path}}"
+  prev="{{home.data.prev.path}}"
+  length="{{ ${1:home.data.assets}.length }}"
+  )
+  .slide(ng-repeat="asset in ${1:home.data.assets}"
+    ng-if="currentIndex === \$index"
+    ng-switch="asset.kind")
+    .media(imago-video="asset" ng-switch-when="video")
+    .media(imago-image="asset" ng-switch-default)
+    .caption(ng-if="currentIndex === \$index")
+      {{ home.data | meta: 'title' }} {{currentIndex + 1}}/{{${1:home.data.assets}.length}}
+]]></content>
+  <tabTrigger>slider</tabTrigger>
+  <scope>source.jade</scope>
+</snippet>

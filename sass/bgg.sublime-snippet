@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+background: green
+]]></content>
+  <tabTrigger>bgg</tabTrigger>
+  <scope>source.scss, source.sass</scope>
+</snippet>

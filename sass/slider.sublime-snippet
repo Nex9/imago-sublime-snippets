@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+.imagoslider
+  +pos()
+  > .next,
+  > .prev
+    position: absolute
+    z-index: 5
+    top:    60px
+    bottom: 60px
+    width: 30%
+  > .next
+    right: 0
+    &:hover
+      cursor: url("i/next@0,5x.png"), e-resize
+  > .prev
+    left: 0
+    &:hover
+      cursor: url("i/prev@0,5x.png"), w-resize
+  .slide,
+  .imagoimage,
+  .imagovideo,
+  .media
+    +pos()
+]]></content>
+  <tabTrigger>slider</tabTrigger>
+  <scope>source.scss, source.sass</scope>
+</snippet>
