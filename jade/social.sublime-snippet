@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+a(ng-href="{{tenantSettings.sociallinks.instagram}}"
+  ng-show="tenantSettings.sociallinks.instagram"
+  target="_blank" title="Instagram").fa.fa-instagram
+a(ng-href="{{tenantSettings.sociallinks.twitter}}"
+  ng-show="tenantSettings.sociallinks.twitter"
+  target="_blank" title="Twitter").fa.fa-twitter
+a(ng-href="{{tenantSettings.sociallinks.facebook}}"
+  ng-show="tenantSettings.sociallinks.facebook"
+  target="_blank" title="Facebook").fa.fa-facebook
+a(ng-href="{{tenantSettings.sociallinks.tumblr}}"
+  ng-show="tenantSettings.sociallinks.tumblr"
+  target="_blank" title="Tumblr").fa.fa-tumblr
+a(ng-href="mailto:{{tenantSettings.settings.defaultEmail}}"
+  ng-show="tenantSettings.settings.defaultEmail"
+  target="_blank" title="mail").fa.fa-envelope-o
+]]></content>
+  <tabTrigger>social</tabTrigger>
+  <scope>source.jade</scope>
+</snippet>
