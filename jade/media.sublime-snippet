@@ -3,14 +3,14 @@
 .media(ng-switch="${1:controller}${2:asset}.type")
   div(imago-video="${1:controller}${2:asset}" ng-switch-when="video")
   div(imago-image="${1:controller}${2:asset}" ng-switch-default)
-  div(ng-switch-when="collection")
-    .slider(imago-slider
+  div(ng-switch-when="slider")
+    .slider(
+      imago-slider="${1:controller}${2:asset}.assets"
       animation="fade"
       loop="true"
       autoplay="5000"
-      length="{{ ${1:controller}${2:asset}.assets.length }}"
       )
-      .slide(ng-repeat="slide in ${1:controller}${2:asset}.assets"
+      .slide(ng-repeat="slide in imagoslider.assets"
         ng-if="currentIndex === \$index"
         ng-switch="slide.type")
         .media(imago-video="slide" ng-switch-when="video")

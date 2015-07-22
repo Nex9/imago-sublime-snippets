@@ -1,13 +1,10 @@
 <snippet>
   <content><![CDATA[
-.slider(imago-slider
+.slider(imago-slider="${1:home.data.assets}"
   animation="${2:fade|slide|sliderotate}"
   loop="true"
-  next="{{home.data.next.path}}"
-  prev="{{home.data.prev.path}}"
-  length="{{ ${1:home.data.assets}.length }}"
   )
-  .slide(ng-repeat="asset in ${1:home.data.assets} track by asset._id"
+  .slide(ng-repeat="asset in imagoslider.assets track by asset._id"
     ng-if="currentIndex === \$index"
     ng-switch="asset.type")
     .media(imago-video="asset" ng-switch-when="video")
