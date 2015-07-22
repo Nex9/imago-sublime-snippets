@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+div(
+    imago-pager
+    state="${1:blog}"
+    posts="${1:blog}.assets"
+    path="/${1:blog}"
+    page-size="${2:10}"
+    tags="${1:blog}.tags"
+    current-page="${1:blog}.currentPage"
+    )
+]]></content>
+  <tabTrigger>blog.pager</tabTrigger>
+  <scope>source.jade</scope>
+</snippet>
