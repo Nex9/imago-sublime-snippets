@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-.media(ng-switch="${1:controller}${2:asset}.kind")
+.media(ng-switch="${1:controller}${2:asset}.type")
   div(imago-video="${1:controller}${2:asset}" ng-switch-when="video")
   div(imago-image="${1:controller}${2:asset}" ng-switch-default)
   div(ng-switch-when="collection")
@@ -12,7 +12,7 @@
       )
       .slide(ng-repeat="slide in ${1:controller}${2:asset}.assets"
         ng-if="currentIndex === \$index"
-        ng-switch="slide.kind")
+        ng-switch="slide.type")
         .media(imago-video="slide" ng-switch-when="video")
         .media(imago-image="slide" ng-switch-default)
 .caption(ng-bind="${1:controller}${2:asset} | meta:'title'")

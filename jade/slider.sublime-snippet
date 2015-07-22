@@ -9,7 +9,7 @@
   )
   .slide(ng-repeat="asset in ${1:home.data.assets} track by asset._id"
     ng-if="currentIndex === \$index"
-    ng-switch="asset.kind")
+    ng-switch="asset.type")
     .media(imago-video="asset" ng-switch-when="video")
     .media(imago-image="asset" ng-switch-default)
     .caption(ng-if="currentIndex === \$index")
