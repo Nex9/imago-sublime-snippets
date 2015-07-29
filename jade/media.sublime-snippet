@@ -1,11 +1,11 @@
 <snippet>
   <content><![CDATA[
-.media(ng-switch="${1:controller}${2:asset}.type")
-  div(imago-video="${1:controller}${2:asset}" ng-switch-when="video")
-  div(imago-image="${1:controller}${2:asset}" ng-switch-default)
+.media(ng-switch="page.data.type")
+  div(imago-video="page.data" ng-switch-when="video")
+  div(imago-image="page.data" ng-switch-default)
   div(ng-switch-when="slider")
     .slider(
-      imago-slider="${1:controller}${2:asset}.assets"
+      imago-slider="page.data.assets"
       animation="fade"
       loop="true"
       autoplay="5000"
@@ -13,9 +13,9 @@
       .slide(ng-repeat="slide in imagoslider.assets"
         ng-if="currentIndex === \$index"
         ng-switch="slide.type")
-        .media(imago-video="slide" ng-switch-when="video")
-        .media(imago-image="slide" ng-switch-default)
-.caption(ng-bind="${1:controller}${2:asset} | meta:'title'")
+        div(imago-video="slide" ng-switch-when="video")
+        div(imago-image="slide" ng-switch-default)
+.caption(ng-bind="page.data | meta:'title'")
 ]]></content>
   <tabTrigger>media</tabTrigger>
   <scope>source.jade</scope>

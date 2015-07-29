@@ -7,8 +7,8 @@
   .slide(ng-repeat="asset in imagoslider.assets track by asset._id"
     ng-if="currentIndex === \$index"
     ng-switch="asset.type")
-    .media(imago-video="asset" ng-switch-when="video")
-    .media(imago-image="asset" ng-switch-default)
+    div(imago-video="asset" ng-switch-when="video")
+    div(imago-image="asset" ng-switch-default)
     .caption(ng-if="currentIndex === \$index")
       {{ home.data | meta: 'title' }} {{currentIndex + 1}}/{{${1:home.data.assets}.length}}
   .slider-index
