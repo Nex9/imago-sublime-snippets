@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+class ${1:NameDirective} extends Directive
+
+  constructor: ->
+
+    return {
+
+      controller: ''
+      templateUrl: ''
+      link: (scope, elements, attrs) ->
+
+    }
+
+]]></content>
+  <tabTrigger>directive</tabTrigger>
+  <scope>source.coffee</scope>
+</snippet>

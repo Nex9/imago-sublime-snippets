@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+class ${1:NameFilter} extends Filter
+
+  constructor: ->
+    return (value) ->
+
+]]></content>
+  <tabTrigger>filter</tabTrigger>
+  <scope>source.coffee</scope>
+</snippet>

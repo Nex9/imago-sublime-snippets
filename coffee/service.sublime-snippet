@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+class ${1:NameService} extends Service
+
+  constructor: ->
+
+]]></content>
+  <tabTrigger>service</tabTrigger>
+  <scope>source.coffee</scope>
+</snippet>

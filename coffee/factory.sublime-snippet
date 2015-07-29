@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+class ${1:NameFactory} extends Factory
+
+  constructor: ->
+
+    return {
+
+    }
+
+]]></content>
+  <tabTrigger>factory</tabTrigger>
+  <scope>source.coffee</scope>
+</snippet>
