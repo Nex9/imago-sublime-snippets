@@ -8,7 +8,7 @@ class ${1:NameDirective} extends Directive
 
       controller: ''
       templateUrl: ''
-      link: (scope, elements, attrs) ->
+      link: (scope, element, attrs) ->
 
     }
 
