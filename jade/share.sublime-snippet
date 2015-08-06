@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+div(
+  imago-share="['facebook', 'twitter']"
+  asset="asset"
+  )
+]]></content>
+  <tabTrigger>share</tabTrigger>
+  <scope>source.jade</scope>
+</snippet>
+

@@ -12,11 +12,11 @@
   > .next
     right: 0
     &:hover
-      cursor: url("i/next@0,5x.png"), e-resize
+      cursor: url("i/next.png"), e-resize
   > .prev
     left: 0
     &:hover
-      cursor: url("i/prev@0,5x.png"), w-resize
+      cursor: url("i/prev.png"), w-resize
   .slide,
   .imagoimage,
   .imagovideo,

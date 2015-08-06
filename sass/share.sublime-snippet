@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+.share
+  a.fa:before
+    content: ''
+    font-size: 0.8125em
+    text-transform: lowercase
+    margin: 0 .25em
+  a.fa.fa-facebook:before
+    content: 'Facebook'
+  a.fa.fa-twitter:before
+    content: 'Twitter'
+  a.fa.fa-google:before
+    content: 'Google'
+  a.fa.fa-linkedin:before
+    content: 'Linked In'
+  a.fa.fa-tumblr:before
+    content: 'Tumblr'
+  a.fa.fa-pinterest:before
+    content: 'Pinterest'
+]]></content>
+  <tabTrigger>share</tabTrigger>
+  <scope>source.scss, source.sass</scope>
+</snippet>
