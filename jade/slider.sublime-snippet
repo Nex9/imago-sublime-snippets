@@ -15,7 +15,7 @@
     a(
       ng-repeat="slide in ${1:home.data.assets}"
       ng-class="{ 'active': currentIndex === \$index }"
-      ng-click="home.setCurrentSlide(\$index, 'firstslider')"
+      ng-click="imagoslider.setCurrent(\$index)"
       )
 ]]></content>
   <tabTrigger>slider</tabTrigger>
