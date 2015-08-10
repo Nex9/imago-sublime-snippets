@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-.slider(imago-slider="${1:home.data.assets}"
+.slider(imago-slider="${1:page.data.assets}"
   animation="${2:fade|slide|sliderotate}"
   loop="true"
   )
@@ -10,10 +10,10 @@
     div(imago-video="asset" ng-switch-when="video")
     div(imago-image="asset" ng-switch-default)
     .caption(ng-if="currentIndex === \$index")
-      {{ home.data | meta: 'title' }} {{currentIndex + 1}}/{{${1:home.data.assets}.length}}
+      {{ home.data | meta: 'title' }} {{currentIndex + 1}}/{{${1:page.data.assets}.length}}
   .slider-index
     a(
-      ng-repeat="slide in ${1:home.data.assets}"
+      ng-repeat="slide in ${1:page.data.assets}"
       ng-class="{ 'active': currentIndex === \$index }"
       ng-click="imagoslider.setCurrent(\$index)"
       )
