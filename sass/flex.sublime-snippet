@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+display: flex
+flex-direction: ${1:column|row}
+align-items: ${2:fex-start|center|flex-stop}
+justify-content: ${3:fex-start|center|flex-stop}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>flex</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.css, source.stylus, source.sass</scope>
+</snippet>
