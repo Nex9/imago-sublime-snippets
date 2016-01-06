@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+imagoModel.getData().then (response) =>
+  for data in response
+    @data = data
+    break
+]]></content>
+  <tabTrigger>getData</tabTrigger>
+  <scope>source.coffee</scope>
+</snippet>
